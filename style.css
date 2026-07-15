@@ -1,0 +1,320 @@
+
+
+.orbitron-<uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.Home-Page {
+    background-color: black;
+    margin: 0;
+}
+.Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+
+}
+
+.Contact-Media {
+    margin-left: 63%;
+}
+#Brand-Logo-Top {
+    margin-left: 2%;
+    width: 300%;
+    margin-bottom: 0;
+    margin-top: 1%;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: 2px solid blueviolet;
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35%;
+    padding-right: 0%;
+
+}
+
+.Contact-Media {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid blueviolet;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.Cart-Wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid blueviolet;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+#Open-Cart {
+    position: relative;
+    color: transparent;
+    background-image: url("images/Cart-Logo-Fixed.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:none; 
+}
+#Open-Cart::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/Cart-Logo-Hover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+#Open-Cart:hover::after {
+    opacity: 1;
+}
+
+#Top-Menu {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10%;
+    font-size: 11px;
+}
+#Top-Menu button {
+    font: inherit;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+}
+
+#Tier-Check {
+    background-color: transparent;
+    border-color: rgb(145, 35, 247);
+    color: rgb(145, 35, 247);
+    border-radius: 7px;
+    border: 2px solid;
+
+}
+#Reviews {
+    background-color: transparent;
+    border-color: rgb(8, 145, 26);
+    color: rgb(8, 145, 26);
+    border-radius: 7px;
+    border: 2px solid;
+
+}
+
+#Custom-Orders {
+    background-color: transparent;
+    border-color: rgb(5, 52, 194);
+    color: rgb(5, 52, 194);
+    border-radius: 7px;
+    border: 2px solid;
+
+}
+
+#Open-Cart {
+   background-repeat: no-repeat;
+   background-position: center;
+   color: transparent;
+   background-color: transparent;
+    background-image: url("images/Cart-Logo-Fixed.png");
+    background-size: contain;
+    border:none;
+    width: 50px;
+    height: 50px;
+
+}
+
+#Instagram, #Depop, #Email, #Ebay {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+#Instagram { background-image: url("images/Instagram.png"); }
+#Ebay { background-image: url("images/Ebay.png"); }
+#Email { background-image: url("images/Email.svg"); }
+#Depop { background-image: url("images/Depop.png"); }
+
+#Instagram:hover { background-image: url("images/Instagram-Hover.png"); }
+#Ebay:hover { background-image: url("images/Ebay-Hover.png"); }
+#Email:hover { background-image: url("images/Email-Hover.svg"); }
+#Depop:hover { background-image: url("images/Depop-Hover.png"); }
+
+
+.Categories {
+    display: flex;
+    flex-direction: column;
+    width: 100% + 45px;
+    gap: 0;
+    padding: 0;
+    margin-left: -40px;
+    margin-right: -5px;
+    list-style: none;
+    
+}
+
+#Category-Title {
+    color: white;
+    font-family: "Orbitron";
+    text-decoration: underline;
+    text-align: right;
+    
+}
+
+.Category-Menu {
+    position: relative;
+    align-items: center;
+    list-style: none;
+    border: 2px solid rgb(145, 35, 247);
+    border-radius: 7px;
+    width: 15%;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+   margin-left: 20px;
+   min-height: 70vh;
+   
+}
+
+#Ebay, #Depop {
+    width: 70px;
+    height: 50px;
+}
+
+#Hair-Clips, #Beanies, #Bracelets, #Keychains, #Bottoms {
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+    /* top , right, bottom, left*/
+    background-color: transparent;
+    font-family: "Orbitron";
+    color: white;
+    text-align: right;
+    border:none;
+    border-bottom: 1px solid rgba(145, 35, 247, 0.5);
+    margin-right: 5px;
+    transition: 0.2s ease;
+}
+
+#Hair-Clips {
+    border-top: 1px solid rgba(145, 35, 247, 0.5)
+    
+}
+
+#Hair-Clips:hover, #Beanies:hover, #Bracelets:hover, #Keychains:hover, #Bottoms:hover {
+    color: rgb(5, 52, 194);
+}
+
+#Tier-Check, #Reviews, #Custom-Orders {
+    transition: 0.2ease;
+}
+#Tier-Check:hover, #Reviews:hover, #Custom-Orders:hover {
+    opacity: 50%;
+}
+
+/* TEMPORARY ADMIN LOCK FOR GITHUB*/
+
+#Lock-Screen {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#Password-Input {
+    text-align: center;
+    color: greenyellow;
+}
+
+#Incorrect-Password {
+    color: red;
+}
+
+/* MOBILE LAYOUT - only applies below 600px, desktop styles above are untouched */
+/* Same row-based format as desktop, just smaller sections and less padding */
+@media (max-width: 600px) {
+    .Header {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    #Brand-Logo-Top {
+        width: auto;
+        font-size: 16px;
+        padding: 8px 10px;
+        margin-left: 4px;
+    }
+
+    .Contact-Media {
+        margin-left: 0;
+        padding: 5px;
+        gap: 4px;
+    }
+
+    #Instagram, #Depop, #Email, #Ebay {
+        width: 26px;
+        height: 26px;
+    }
+
+    #Ebay, #Depop {
+        width: 40px;
+        height: 26px;
+    }
+
+    .Cart-Wrapper {
+        padding: 5px;
+    }
+
+    #Open-Cart {
+        width: 30px;
+        height: 30px;
+    }
+
+    #Top-Menu {
+        gap: 3%;
+        font-size: 8px;
+    }
+
+    #Top-Menu button {
+        margin-top: 15px;
+        padding: 4px 6px;
+    }
+
+    .Category-Menu {
+        width: 40%;
+        padding-left: 15px;
+        padding-right: 3px;
+        margin-left: 8px;
+        min-height: 50vh;
+    }
+
+    #Hair-Clips, #Beanies, #Bracelets, #Keychains, #Bottoms {
+        font-size: 12px;
+        padding: 6px 6px 6px 0px;
+    }
+}
